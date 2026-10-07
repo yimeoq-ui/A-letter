@@ -1,0 +1,6 @@
+{
+  "name": "Thiệp 20/10 — Gửi Những Người Phụ Nữ Yêu Thương",
+  "description": "Tấm thiệp 20/10 ấm áp cùng Chiikawa, hiệu ứng cánh hoa rơi và giai điệu Trước Khi Em Tồn Tại gửi đến mẹ, cô giáo và những người phụ nữ thân yêu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

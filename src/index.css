@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Lora', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-serif-body {
+  font-family: var(--font-serif);
+}
+
+.font-ui {
+  font-family: var(--font-sans);
+}
+
+/* Subtle fine stationery paper texture */
+.paper-texture-light {
+  background-image: 
+    radial-gradient(rgba(244, 114, 182, 0.07) 1px, transparent 0),
+    radial-gradient(rgba(251, 113, 133, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.paper-texture-dark {
+  background-image: 
+    radial-gradient(rgba(225, 29, 72, 0.12) 1px, transparent 0),
+    radial-gradient(rgba(159, 18, 57, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Gingham / Plaide delicate background pattern */
+.gingham-light {
+  background-color: #fff6f9;
+  background-image: 
+    linear-gradient(90deg, rgba(251, 207, 232, 0.28) 50%, transparent 50%),
+    linear-gradient(rgba(251, 207, 232, 0.28) 50%, transparent 50%);
+  background-size: 48px 48px;
+}
+
+.gingham-dark {
+  background-color: #0d0306;
+  background-image: 
+    linear-gradient(90deg, rgba(136, 19, 55, 0.16) 50%, transparent 50%),
+    linear-gradient(rgba(136, 19, 55, 0.16) 50%, transparent 50%);
+  background-size: 48px 48px;
+}
+
+/* Delicate lace border effect */
+.lace-border-light {
+  box-shadow: 
+    0 0 0 1px rgba(244, 114, 182, 0.25),
+    0 0 0 6px rgba(255, 255, 255, 0.9),
+    0 0 0 7px rgba(244, 114, 182, 0.35),
+    0 24px 60px -12px rgba(190, 24, 93, 0.14);
+}
+
+.lace-border-dark {
+  box-shadow: 
+    0 0 0 1px rgba(225, 29, 72, 0.35),
+    0 0 0 6px rgba(26, 6, 12, 0.95),
+    0 0 0 7px rgba(159, 18, 57, 0.5),
+    0 28px 70px -12px rgba(0, 0, 0, 0.85),
+    0 0 40px -10px rgba(225, 29, 72, 0.22);
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 2.8s ease-in-out infinite;
+}
